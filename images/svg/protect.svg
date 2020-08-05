@@ -1,0 +1,8 @@
+<svg id="protect" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+	<style>
+		.protect-1{fill:#fff;}.protect-2{fill:#bc3b3b;}
+	</style>
+	<polyline class="protect-1" points="16 30.68 28.313 20.619 28.313 1.023 16 1.023" />
+	<polyline class="protect-2" points="16 1.023 3.686 1.023 3.686 20.619 16 30.68" />
+	<path class="protect-2" d="M15.99975,32,2.66375,21.1053V0h26.6725V21.1053ZM4.70907,20.13457l11.29068,9.2249,11.29118-9.2249V2.04532H4.70907Z" />
+</svg>
