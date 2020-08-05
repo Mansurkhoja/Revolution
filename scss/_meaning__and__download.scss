@@ -1,0 +1,30 @@
+.meanning-revolution {
+    padding-bottom: 0;
+}
+
+.meanning__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    p {
+        margin: 0 0 .5rem;
+    }
+    & img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.download-shadow {
+    box-shadow: 0px -20px 20px rgba(120, 150, 180, 0.3) // box-shadow: 11px -2px 30px rgba($color: $dark, $alpha: .3);
+}
+
+.download__inner {
+    text-align: center;
+    & h6 {
+        font-size: 1.125rem;
+    }
+}

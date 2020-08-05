@@ -1,0 +1,70 @@
+.footer {
+    padding: 3rem 0 2rem;
+    position: relative;
+}
+
+.footer__inner {
+    text-align: center;
+    & h6 {
+        font-size: 1.125rem;
+    }
+    & ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 1.25rem auto 1.5rem;
+        max-width: 700px;
+        li {
+            margin: 0 .2rem;
+        }
+        a {
+            padding: .5rem;
+            @include transition (all 0.3s ease-in-out);
+            &:hover {
+                color: $brand-color;
+            }
+        }
+    }
+}
+
+.footer__title {
+    letter-spacing: .2rem;
+    span {
+        background: -webkit-linear-gradient($yellow, $orange);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+// .fist {
+//     &::before {
+//         content: '';
+//         width: 0;
+//         height: 1.144px;
+//         background-color: $dark;
+//         display: block;
+//         position: absolute;
+//         left: 0;
+//         bottom: 9.618px;
+//     }
+//     &::after {
+//         content: '';
+//         width: 100vw;
+//         height: 1.144px;
+//         background-color: $dark;
+//         display: block;
+//         position: absolute;
+//         left: 128px;
+//         bottom: 9.618px;
+//     }
+// }
+//fist
+#fist {
+    position: absolute;
+    width: 128px;
+    bottom: 5px;
+    left: 0;
+    fill: $dark;
+    animation: fist 9s linear infinite;
+}

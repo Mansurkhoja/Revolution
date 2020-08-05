@@ -1,0 +1,63 @@
+.breadcrumb {
+    background: url(../images/rev-bg.png) no-repeat center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    @include cover (cover);
+}
+
+.breadcrumb::before {
+    content: "";
+    background: rgba(6, 14, 21, 0.55);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.breadcrumb__inner {
+    text-align: center;
+}
+
+.breadcrumb__title {
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-left: 2rem;
+    font-weight: 700;
+    color: $white;
+}
+
+.breadcrumb__lists {
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.breadcrumb__lists li {
+    position: relative;
+    padding-right: 2rem;
+    &:last-child::after {
+        display: none;
+    }
+    &::after {
+        content: '>>';
+        position: absolute;
+        color: $white;
+        top: 1px;
+        padding-left: .5rem;
+    }
+}
+
+.breadcrumb__lists a {
+    color: $white;
+    &.current {
+        pointer-events: none;
+    }
+}
+
+.breadcrumb__lists a.current {
+    color: $brand-color;
+}

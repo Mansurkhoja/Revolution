@@ -1,0 +1,56 @@
+.btn {
+    display: inline-block;
+    font-weight: 600;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f75940;
+    padding: 0 2rem;
+    font-size: 1.125rem;
+    line-height: 3.4rem;
+    @include b-radius(10px);
+    color: $white;
+    background: $brand-color;
+    @include transition(all 0.3s ease-in-out);
+    &:hover {
+        background: #3dc7be;
+        border: 2px solid #3dc7be;
+    }
+}
+
+.submit__btn {
+    margin-left: auto;
+    margin-right: auto;
+    & .btn {
+        background-color: $white !important;
+        color: $brand-color !important;
+        box-shadow: none;
+        &:hover {
+            color: $cyan !important;
+        }
+    }
+}
+
+#movetop {
+    display: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    position: fixed;
+    bottom: 20px;
+    right: 15px;
+    z-index: 997;
+    outline: none;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background: $grey;
+    @include b-radius(50%);
+    fill: $white;
+    box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
+    transition: all 0.3s ease 0s;
+    &:hover #arrowtop {
+        animation: 800ms linear 0s normal none infinite arrowtop; // running
+    }
+}

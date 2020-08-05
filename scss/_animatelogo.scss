@@ -1,0 +1,282 @@
+@include keyframes(logoanimate) {
+    0% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+    50% {
+        -webkit-transform: scale(0.8, 0.8);
+        transform: scale(0.8, 0.8);
+    }
+    100% {
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+}
+
+@include keyframes(cls-1) {
+    0% {
+        fill: rgba($color: $yellow, $alpha: 0.8);
+    }
+    25% {
+        fill: $yellow;
+    }
+    50% {
+        fill: $pink;
+    }
+    75% {
+        fill: $orange;
+    }
+    100% {
+        fill: $yellow;
+    }
+}
+
+@include keyframes(cls-2) {
+    0% {
+        fill: rgba($color: $pink, $alpha: 0.8);
+    }
+    25% {
+        fill: $pink;
+    }
+    50% {
+        fill: $green;
+    }
+    75% {
+        fill: $yellow;
+    }
+    100% {
+        fill: $pink;
+    }
+}
+
+@include keyframes(cls-3) {
+    0% {
+        fill: rgba($color: $green, $alpha: 0.8);
+    }
+    25% {
+        fill: $green;
+    }
+    50% {
+        fill: $blue;
+    }
+    75% {
+        fill: $pink;
+    }
+    100% {
+        fill: $green;
+    }
+}
+
+@include keyframes(cls-4) {
+    0% {
+        fill: rgba($color: $blue, $alpha: 0.8);
+    }
+    25% {
+        fill: $blue;
+    }
+    50% {
+        fill: $orange;
+    }
+    75% {
+        fill: $green;
+    }
+    100% {
+        fill: $blue;
+    }
+}
+
+@include keyframes(cls-5) {
+    0% {
+        fill: rgba($color: $orange, $alpha: 0.8);
+    }
+    25% {
+        fill: $orange;
+    }
+    50% {
+        fill: $yellow;
+    }
+    75% {
+        fill: $blue;
+    }
+    100% {
+        fill: $orange;
+    }
+}
+
+@include keyframes(pay) {
+    0% {
+        transform: translateX(0%);
+    }
+    25% {
+        transform: translateX(15%);
+    }
+    50% {
+        transform: translateX(25%);
+    }
+    75% {
+        transform: translateX(15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@include keyframes(rewards) {
+    0% {
+        fill: rgba($color: $cyan, $alpha: 0.8);
+    }
+    25% {
+        fill: $cyan;
+    }
+    50% {
+        fill: $orange;
+    }
+    75% {
+        fill: $orange;
+    }
+    100% {
+        fill: $cyan;
+    }
+}
+
+@include keyframes(clock-minute) {
+    0% {
+        transform-origin: center;
+        transform: rotate(20deg);
+    }
+    25% {
+        transform-origin: center;
+        transform: rotate(90deg);
+    }
+    50% {
+        transform-origin: center;
+        transform: rotate(180deg);
+    }
+    75% {
+        transform-origin: center;
+        transform: rotate(270deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(360deg);
+    }
+}
+
+@include keyframes(clock-hour) {
+    0% {
+        transform-origin: center;
+        transform: rotate(0deg);
+    }
+    50% {
+        transform-origin: center;
+        transform: rotate(10deg);
+    }
+    100% {
+        transform-origin: center;
+        transform: rotate(20deg);
+    }
+}
+
+@include keyframes(userint) {
+    0% {
+        fill: $white;
+        stroke: $cyan;
+        stroke-width: 0.5;
+        stroke-dasharray: 147;
+        stroke-dashoffset: 147;
+    }
+    25% {
+        fill: $white;
+        stroke-dasharray: 107;
+        stroke-dashoffset: 140;
+    }
+    50% {
+        fill: $white;
+        stroke-dasharray: 133;
+        stroke-dashoffset: 266;
+    }
+    75% {
+        stroke-dasharray: 0;
+        stroke-dashoffset: 0;
+        fill: $cyan;
+    }
+    100% {
+        fill: $cyan;
+        stroke: none;
+    }
+}
+
+@include keyframes(databaseIcon) {
+    0% {
+        fill: rgba($color: $cyan, $alpha: 0.8);
+    }
+    25% {
+        fill: $cyan;
+    }
+    50% {
+        fill: $orange;
+    }
+    75% {
+        fill: $orange;
+    }
+    100% {
+        fill: $cyan;
+    }
+}
+
+@include keyframes(arrowtop) {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    20% {
+        transform: translateY(-3px);
+        opacity: .5;
+    }
+    40% {
+        transform: translateY(-7px);
+        opacity: 0;
+    }
+    60% {
+        transform: translateY(7px);
+        opacity: 0;
+    }
+    80% {
+        transform: translateY(3px);
+        opacity: .5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@include keyframes (navbar-open) {
+    0% {
+        transform: translateX(110%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@include keyframes (navbar-close) {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-110%);
+    }
+}
+
+@include keyframes (fist) {
+    to {
+        left: 100%;
+    }
+}
+
+@include keyframes (fistwidth) {
+    to {
+        left: 100%;
+    }
+}

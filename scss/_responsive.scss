@@ -1,0 +1,313 @@
+/*--------------------------------- Responsive Media Quaries -----------------------------*/
+
+// @media only screen and (min-width: 1200px) {}
+
+/* Medium Device = 991px*/
+
+@media only screen and (max-width: 991px) {
+    .o-none {
+        opacity: 0;
+    }
+    // .colapse-open {
+    //     animation: colapse-open .4s linear 0s 1 normal both;
+    // }
+    .show~.collapse {
+        animation: navbar-open .4s linear forwards;
+        opacity: 1;
+    }
+    .header.fixed .collapse {
+        top: calc(100% + 9px);
+    }
+    .collapse {
+        display: flex;
+        justify-content: center;
+        width: calc(100% + 62px);
+        height: calc(100vh);
+        background-color: $white;
+        position: absolute;
+        transform: translateX(110%);
+        border-top: 1px solid rgba($color: $brand-color, $alpha: 1);
+        top: calc(100% + 25px);
+        right: -31px;
+        overflow: auto;
+        z-index: 998;
+        align-items: center;
+    }
+    .collapse-close {
+        animation: navbar-close .4s linear forwards;
+    }
+    .nav__links {
+        flex-direction: column;
+        font-size: 1.875rem;
+        text-align: center;
+        margin-bottom: 2.25rem;
+    }
+    .nav__links li {
+        padding: 0.3125rem;
+    }
+    .burger {
+        display: block;
+        width: 25px;
+        height: 20px;
+        cursor: pointer;
+        position: relative;
+    }
+    .burger__line {
+        display: block;
+        background-color: $brand-color;
+        position: absolute;
+        right: 0;
+        transition: 0.4s all linear;
+    }
+    .show .burger__line_first {
+        width: 100%;
+    }
+    .show .burger__line_third {
+        width: 50%;
+    }
+    .burger__line_first {
+        top: 0;
+        width: 50%;
+        height: 2px;
+    }
+    .burger__line_second {
+        width: 75%;
+        height: 2px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .burger__line_third {
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+    }
+    .service__img {
+        display: none;
+    }
+    .service__info {
+        margin: 0 auto;
+    }
+    // service
+    .best__grid__item {
+        width: 50%;
+        border-right: 0;
+        border-bottom: 1px solid rgba($color: $grey, $alpha: .3) !important;
+        &:nth-child(n+5) {
+            border-bottom: 0 !important;
+        }
+        &:nth-child(odd) {
+            border-right: 1px solid rgba($color: $grey, $alpha: .3) !important;
+        }
+    }
+    .features__grid__item {
+        width: 50%;
+        &:last-child {
+            margin-top: 2rem;
+        }
+    }
+    // price
+    .price__items {
+        width: auto;
+    }
+    // contact
+    .london {
+        width: 50%;
+    }
+    .paris {
+        width: 50%;
+    }
+    .newyourk {
+        width: 50%;
+    }
+}
+
+
+/* Small Device = 869px */
+
+@media only screen and (max-width: 869px) {
+    .btn {
+        font-size: 1rem;
+        line-height: 3rem;
+    }
+    .intro {
+        height: calc(100vh);
+    }
+    .intro__inner {
+        margin-top: 0;
+    }
+    .slogan h1 {
+        font-size: 2rem;
+    }
+    .slogan h6 {
+        font-size: 0.8rem;
+    }
+    small {
+        font-size: 0.625rem;
+    }
+    .title {
+        font-size: 1.875rem;
+        line-height: 2.625rem;
+    }
+    label {
+        font-size: 0.875rem;
+    }
+    .site-section {
+        padding: 3rem 0;
+    }
+    .platform__text {
+        font-size: 1rem;
+        & span {
+            font-size: 1.5rem;
+        }
+    }
+    .sub-title {
+        color: #334252;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+    .service-text h5 {
+        font-size: 1.25rem;
+    }
+    .info__text {
+        max-width: 100%;
+        padding: 1rem;
+        & p {
+            padding-right: 0;
+            font-size: 0.875rem;
+        }
+    }
+    .features__info {
+        margin: 0;
+        padding: 1.25rem;
+    }
+    .features__img {
+        max-width: 60%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .service__info .title {
+        text-align: center;
+    }
+    .meanning-revolution {
+        padding-bottom: 0;
+    }
+    label {
+        margin-top: 1rem;
+    }
+    // contact
+    .forms .form {
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 0;
+    }
+    .london {
+        width: 100%;
+    }
+    .paris {
+        width: 100%;
+    }
+    .newyourk {
+        width: 100%;
+    }
+    #fist {
+        width: 64px;
+        bottom: 0;
+    }
+}
+
+
+/* USmall Device = 654px */
+
+@media only screen and (max-width: 654px) {
+    .header {
+        padding: 1rem;
+    }
+    .tab-content {
+        width: 80%;
+        margin: .625rem auto 0;
+    }
+    .intro {
+        height: calc(100vh - 16px);
+    }
+    p {
+        font-size: 0.875rem;
+    }
+    .logo {
+        width: 1.625rem;
+        height: auto;
+    }
+    .logo__text {
+        padding-left: 0.525rem;
+        font-size: 1.5rem;
+    }
+    .nav__links {
+        font-size: 1.25rem;
+        padding-bottom: 20px;
+    }
+    .slogan h1 {
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 1.625rem;
+    }
+    .platform__info {
+        flex-direction: column;
+    }
+    .platform__text {
+        text-align: center;
+        & span.text__right {
+            text-align: center;
+        }
+    }
+    .platform__img {
+        max-width: 80%;
+        padding: 1.25rem;
+    }
+    .service__info__items {
+        grid-template-columns: 100%;
+        justify-items: center;
+        text-align: center;
+    }
+    .service-icon {
+        margin-bottom: 1.25rem;
+    }
+    .service-text p {
+        font-size: 0.875rem;
+    }
+    .footer__inner h6 {
+        font-size: 1rem;
+    }
+    .footer__inner ul {
+        font-size: 0.875rem;
+    }
+    // service
+    .best__grid {
+        margin-top: 0;
+    }
+    .best__grid__item {
+        width: 100%;
+        border-bottom: 1px solid rgba($color: $grey, $alpha: .3) !important;
+        border-right: 0 !important;
+        &:nth-child(odd) {
+            border-right: 0 !important;
+        }
+        &:nth-child(5) {
+            border-bottom: 1px solid rgba($color: $grey, $alpha: .3) !important;
+        }
+    }
+    .features__grid__item {
+        width: 100%;
+        margin: 2rem 0;
+    }
+    .price__items {
+        padding: 1rem 2rem;
+    }
+    .price__text {
+        font-size: .875rem;
+        font-weight: 300;
+        margin: 0;
+    }
+}

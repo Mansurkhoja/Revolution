@@ -1,0 +1,30 @@
+.features__info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    // flex-wrap: wrap;
+    &--last {
+        margin: 6rem 0;
+    }
+}
+
+.features__img {
+    max-width: 45%;
+    padding: 0 2rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.info__text {
+    max-width: 55%;
+    padding: 0 1rem 0 2rem;
+    & p {
+        padding-right: 1.875rem;
+        margin-bottom: 0;
+    }
+}

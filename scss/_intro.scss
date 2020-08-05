@@ -1,0 +1,52 @@
+.intro {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 104px);
+    justify-content: center;
+    align-items: center;
+    //background-color: $bg-color-light;
+    background-image: url(../images/rev-bg1.png);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.intro__inner {
+    text-align: center;
+    margin-top: 104px;
+}
+
+.slogan {
+    color: $white-blue;
+    h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        span {
+            color: $brand-color;
+        }
+    }
+    h6 {
+        color: $cyan;
+        font-size: 1rem;
+        font-weight: 400;
+        margin: .625rem;
+    }
+}
+
+.revolution__button {
+    margin-top: 2.625rem;
+}
+
+small {
+    display: block;
+    text-align: center;
+    color: #8f96a8;
+    font-weight: 500;
+    margin-top: 25px;
+    font-size: .75rem;
+    a {
+        text-decoration: underline;
+        color: $light-grey;
+    }
+}

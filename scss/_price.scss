@@ -1,0 +1,75 @@
+.price__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price__items {
+    width: 35%;
+    border: 1px solid rgba($color: $grey, $alpha: .3);
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    margin: 2rem;
+    text-align: center;
+    @include transition(all .2s linear);
+    & h5 {
+        font-size: 1.625rem;
+        color: $orange;
+    }
+    &:hover {
+        box-shadow: 1px 1px 30px rgba($color: $grey, $alpha: .2);
+    }
+}
+
+.price__info {
+    color: $dark;
+}
+
+.currency {
+    color: $green;
+    font-size: 1.625rem;
+    font-weight: 300;
+    opacity: .7;
+    vertical-align: top;
+}
+
+.number {
+    font-size: 3rem;
+    color: $orange;
+    font-weight: bold;
+}
+
+.price__text {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.free__price__include {
+    text-align: left;
+    margin-top: 2.625rem;
+    line-height: 2;
+    & li::after {
+        content: '✓';
+        float: right;
+        color: $green;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    & li:last-child::after {
+        content: none;
+    }
+}
+
+.unlimited__price__include {
+    text-align: left;
+    margin-top: 2.625rem;
+    line-height: 2;
+    & li::after {
+        content: '✓';
+        float: right;
+        color: $green;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}

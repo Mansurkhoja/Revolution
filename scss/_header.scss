@@ -1,0 +1,113 @@
+#header {
+    transition: all .4s linear;
+}
+
+.header {
+    padding: 1.5625rem 1rem;
+    background-color: $white;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
+    z-index: 999;
+    padding: .625rem 1rem;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo__brand {
+    display: flex;
+    align-items: center;
+    color: $brand-color;
+}
+
+.logo {
+    fill: $brand-color;
+}
+
+.logo__text {
+    padding-left: .625rem;
+    font-size: 2.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.logo__brand:hover .logo {
+    fill: rgba($brand-color, .9);
+    animation: logoanimate 2s infinite;
+}
+
+.logo__brand:hover .cls-1 {
+    animation: cls-1 2s infinite linear;
+}
+
+.logo__brand:hover .cls-2 {
+    animation: cls-2 2s infinite linear;
+}
+
+.logo__brand:hover .cls-3 {
+    animation: cls-3 2s infinite linear;
+}
+
+.logo__brand:hover .cls-4 {
+    animation: cls-4 2s infinite linear;
+}
+
+.logo__brand:hover .cls-5 {
+    animation: cls-5 2s infinite linear;
+}
+
+.logo__brand:hover .logo__text {
+    color: rgba($brand-color, .9);
+}
+
+.nav__links {
+    display: flex;
+    li {
+        padding: 0 .625rem;
+    }
+    .nav__link {
+        color: $dark; //rgba($white, .9)
+        position: relative;
+        font-weight: 500;
+        display: block;
+        @include transition(all 0.3s ease-in-out);
+        &:hover {
+            color: $brand-color;
+        }
+        &.current {
+            color: $brand-color;
+        }
+    }
+}
+
+.nav__link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    background: #f75940;
+    height: 2px;
+    @include transition(all 0.3s linear);
+}
+
+.nav__link:hover:after {
+    width: 100%;
+}
+
+.burger {
+    display: none;
+}
