@@ -1341,7 +1341,7 @@ label {
 .breadcrumb__title {
   font-size: 2.5rem;
   margin-bottom: 0;
-  margin-left: 2rem;
+  margin-right: 2rem;
   font-weight: 700;
   color: #ffffff; }
 
@@ -1667,7 +1667,7 @@ label {
     opacity: 1; }
 
   .header.fixed .collapse {
-    top: calc(100% + 9px); }
+    top: calc(100% + 10px); }
 
   .collapse {
     display: flex;
@@ -1854,6 +1854,12 @@ label {
     bottom: 0; } }
 /* USmall Device = 654px */
 @media only screen and (max-width: 654px) {
+  .collapse {
+    top: calc(100% + 15px); }
+
+  .header.fixed .collapse {
+    top: calc(100% + 15px); }
+
   .header {
     padding: 1rem; }
 
