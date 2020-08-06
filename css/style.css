@@ -141,7 +141,7 @@ h6 {
   box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
   transition: all 0.3s ease 0s; }
   #movetop:hover #arrowtop {
-    animation: 800ms linear 0s normal none forwards arrowtop; }
+    animation: 800ms linear 0s normal none infinite arrowtop; }
 
 /* Animatelogo */
 @-webkit-keyframes logoanimate {
@@ -1852,13 +1852,22 @@ label {
   #fist {
     width: 64px;
     bottom: 0; } }
-/* USmall Device = 654px */
-@media only screen and (max-width: 654px) {
+/* USmall Device = 669px */
+@media only screen and (max-width: 669px) {
+  .tab-content img {
+    max-width: 50% !important; }
+
+  .features__img {
+    max-width: 50%; }
+
+  .meanning__inner img {
+    max-width: 50%; }
+
   .collapse {
-    top: calc(100% + 15px); }
+    top: calc(100% + 16px); }
 
   .header.fixed .collapse {
-    top: calc(100% + 15px); }
+    top: calc(100% + 16px); }
 
   .header {
     padding: 1rem; }
