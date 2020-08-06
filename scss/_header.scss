@@ -42,29 +42,27 @@
 }
 
 .logo__brand:hover .logo {
-    -webkit-text-fill-color: rgba($brand-color, .9);
-    fill: rgba($brand-color, .9);
-    animation: logoanimate 2s forwards;
+    animation: logoanimate 2s backwards;
 }
 
 .logo__brand:hover .cls-1 {
-    animation: cls-1 2s infinite linear;
+    animation: cls-1 2s backwards linear;
 }
 
 .logo__brand:hover .cls-2 {
-    animation: cls-2 2s infinite linear;
+    animation: cls-2 2s backwards linear;
 }
 
 .logo__brand:hover .cls-3 {
-    animation: cls-3 2s infinite linear;
+    animation: cls-3 2s backwards linear;
 }
 
 .logo__brand:hover .cls-4 {
-    animation: cls-4 2s infinite linear;
+    animation: cls-4 2s backwards linear;
 }
 
 .logo__brand:hover .cls-5 {
-    animation: cls-5 2s infinite linear;
+    animation: cls-5 2s backwards linear;
 }
 
 .logo__brand:hover .logo__text {
