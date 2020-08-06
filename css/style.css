@@ -116,6 +116,7 @@ h6 {
       color: #3dc7be !important; }
 
 #movetop {
+  padding: 0;
   display: none;
   border: none;
   justify-content: center;
@@ -141,7 +142,7 @@ h6 {
   box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
   transition: all 0.3s ease 0s; }
   #movetop:hover #arrowtop {
-    animation: 800ms linear 0s normal none infinite arrowtop; }
+    animation: arrowtop .9s forwards ease; }
 
 /* Animatelogo */
 @-webkit-keyframes logoanimate {
@@ -900,7 +901,7 @@ h6 {
 
 /* Header */
 #header {
-  transition: all .4s linear; }
+  transition: all .1s ease-in-out; }
 
 .header {
   padding: 1.5625rem 1rem;
@@ -1006,6 +1007,10 @@ h6 {
   justify-content: center;
   align-items: center;
   background-image: url(../images/rev-bg1.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
   background-size: cover;
   background-position: top;
   background-attachment: fixed;
@@ -1053,7 +1058,10 @@ input {
   display: none; }
   input:checked + label {
     color: #f75940;
-    outline: auto; }
+    outline: auto;
+    -moz-outline-color: #f75940;
+    outline-color: #f75940;
+    -moz-outline: auto; }
     input:checked + label svg {
       fill: #f75940; }
     input:checked + label #lock .lock-2 {
@@ -1077,6 +1085,7 @@ label {
   cursor: pointer;
   position: relative;
   margin: 0 1rem;
+  -webkit-tap-highlight-color: transparent;
   min-width: 145px;
   padding: .5rem 1rem;
   font-size: 1rem;
@@ -1094,8 +1103,10 @@ label {
     margin: 0 auto .625rem;
     max-width: 1.5rem;
     max-height: 1.5rem; }
-    label svg#pay {
+    label svg#lock {
       margin-right: 49px; }
+    label svg#pay {
+      margin-right: 45px; }
   label:hover {
     color: #3dc7be;
     fill: #3dc7be; }

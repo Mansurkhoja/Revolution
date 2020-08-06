@@ -82,7 +82,9 @@ window.addEventListener('resize', fixheader, false);
 // for srollTop
 let moveTop = document.getElementById('movetop')
 moveTop.addEventListener('click', function() {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 0, {
+        behavior: 'smooth'
+    });
 })
 let scroltop = function() {
     if (document.body.scrollTop > 44 || document.documentElement.scrollTop > 44) {

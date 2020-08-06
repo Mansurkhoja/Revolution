@@ -11,6 +11,9 @@ input {
     &:checked+label {
         color: $brand-color;
         outline: auto;
+        -moz-outline-color: $brand-color;
+        outline-color: $brand-color;
+        -moz-outline: auto;
         & svg {
             fill: $brand-color;
         }
@@ -43,6 +46,7 @@ label {
     cursor: pointer;
     position: relative;
     margin: 0 1rem;
+    -webkit-tap-highlight-color: transparent;
     min-width: 145px;
     padding: .5rem 1rem;
     font-size: $font-size-base;
@@ -56,8 +60,11 @@ label {
         margin: 0 auto .625rem;
         max-width: 1.5rem;
         max-height: 1.5rem;
-        &#pay {
+        &#lock {
             margin-right: 49px;
+        }
+        &#pay {
+            margin-right: 45px;
         }
     }
     &:hover {
