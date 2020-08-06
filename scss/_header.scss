@@ -42,8 +42,9 @@
 }
 
 .logo__brand:hover .logo {
+    -webkit-text-fill-color: rgba($brand-color, .9);
     fill: rgba($brand-color, .9);
-    animation: logoanimate 2s infinite;
+    animation: logoanimate 2s forwards;
 }
 
 .logo__brand:hover .cls-1 {

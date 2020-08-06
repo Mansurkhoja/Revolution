@@ -141,7 +141,11 @@ h6 {
   box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
   transition: all 0.3s ease 0s; }
   #movetop:hover #arrowtop {
-    animation: 800ms linear 0s normal none infinite arrowtop; }
+    animation: 800ms linear 0s normal none forwards arrowtop; }
+
+#arrowtop {
+  width: 16px;
+  height: auto; }
 
 /* Animatelogo */
 @-webkit-keyframes logoanimate {
@@ -186,47 +190,67 @@ h6 {
     transform: scale(1, 1); } }
 @-webkit-keyframes cls-1 {
   0% {
+    -webkit-text-fill-color: rgba(255, 170, 0, 0.8);
     fill: rgba(255, 170, 0, 0.8); }
   25% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; }
   50% {
+    -webkit-text-fill-color: #d96a84;
     fill: #d96a84; }
   75% {
+    -webkit-text-fill-color: #ff6200;
     fill: #ff6200; }
   100% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; } }
 @-moz-keyframes cls-1 {
   0% {
+    -webkit-text-fill-color: rgba(255, 170, 0, 0.8);
     fill: rgba(255, 170, 0, 0.8); }
   25% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; }
   50% {
+    -webkit-text-fill-color: #d96a84;
     fill: #d96a84; }
   75% {
+    -webkit-text-fill-color: #ff6200;
     fill: #ff6200; }
   100% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; } }
 @-ms-keyframes cls-1 {
   0% {
+    -webkit-text-fill-color: rgba(255, 170, 0, 0.8);
     fill: rgba(255, 170, 0, 0.8); }
   25% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; }
   50% {
+    -webkit-text-fill-color: #d96a84;
     fill: #d96a84; }
   75% {
+    -webkit-text-fill-color: #ff6200;
     fill: #ff6200; }
   100% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; } }
 @keyframes cls-1 {
   0% {
+    -webkit-text-fill-color: rgba(255, 170, 0, 0.8);
     fill: rgba(255, 170, 0, 0.8); }
   25% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; }
   50% {
+    -webkit-text-fill-color: #d96a84;
     fill: #d96a84; }
   75% {
+    -webkit-text-fill-color: #ff6200;
     fill: #ff6200; }
   100% {
+    -webkit-text-fill-color: #ffaa00;
     fill: #ffaa00; } }
 @-webkit-keyframes cls-2 {
   0% {
@@ -916,8 +940,9 @@ h6 {
   text-transform: uppercase; }
 
 .logo__brand:hover .logo {
+  -webkit-text-fill-color: rgba(247, 89, 64, 0.9);
   fill: rgba(247, 89, 64, 0.9);
-  animation: logoanimate 2s infinite; }
+  animation: logoanimate 2s forwards; }
 
 .logo__brand:hover .cls-1 {
   animation: cls-1 2s infinite linear; }

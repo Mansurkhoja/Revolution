@@ -15,18 +15,23 @@
 
 @include keyframes(cls-1) {
     0% {
+        -webkit-text-fill-color: rgba($color: $yellow, $alpha: 0.8);
         fill: rgba($color: $yellow, $alpha: 0.8);
     }
     25% {
+        -webkit-text-fill-color: $yellow;
         fill: $yellow;
     }
     50% {
+        -webkit-text-fill-color: $pink;
         fill: $pink;
     }
     75% {
+        -webkit-text-fill-color: $orange;
         fill: $orange;
     }
     100% {
+        -webkit-text-fill-color: $yellow;
         fill: $yellow;
     }
 }
