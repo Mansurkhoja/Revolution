@@ -19,20 +19,20 @@
         fill: rgba($color: $yellow, $alpha: 0.8);
     }
     25% {
-        -webkit-text-fill-color: $yellow;
-        fill: $yellow;
+        -webkit-text-fill-color: rgba($color: $yellow, $alpha: 1);
+        fill: rgba($color: $yellow, $alpha: 1);
     }
     50% {
-        -webkit-text-fill-color: $pink;
-        fill: $pink;
+        -webkit-text-fill-color: rgba($color: $pink, $alpha: 1);
+        fill: rgba($color: $pink, $alpha: 1);
     }
     75% {
-        -webkit-text-fill-color: $orange;
-        fill: $orange;
+        -webkit-text-fill-color: rgba($color: $orange, $alpha: 1);
+        fill: rgba($color: $orange, $alpha: 1);
     }
     100% {
-        -webkit-text-fill-color: $yellow;
-        fill: $yellow;
+        -webkit-text-fill-color: rgba($color: $yellow, $alpha: 1);
+        fill: rgba($color: $yellow, $alpha: 1);
     }
 }
 
