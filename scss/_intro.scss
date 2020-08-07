@@ -6,7 +6,7 @@
     align-items: center;
     //background-color: $bg-color-light;
     background-image: url(../images/rev-bg1.png);
-    @include cover(cover);
+    @include cover (cover);
     background-position: top;
 }
 
