@@ -4,7 +4,6 @@
 /* Base */
 html {
   font-size: 100%;
-  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased; }
@@ -80,6 +79,9 @@ h6 {
     line-height: 1.75rem;
     font-weight: 400; }
 
+.o-hidden {
+  overflow: hidden; }
+
 /* Buttons */
 .btn {
   display: inline-block;
@@ -142,7 +144,7 @@ h6 {
   box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
   transition: all 0.3s ease 0s; }
   #movetop:hover #arrowtop {
-    animation: arrowtop .9s forwards ease; }
+    animation: arrowtop .9s infinite linear; }
 
 /* Animatelogo */
 @-webkit-keyframes logoanimate {
@@ -901,7 +903,11 @@ h6 {
 
 /* Header */
 #header {
-  transition: all .1s ease-in-out; }
+  -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  -moz-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  -o-transition: all 0.25s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 1, 1); }
 
 .header {
   padding: 1.5625rem 1rem;
@@ -912,7 +918,7 @@ h6 {
   top: 0;
   right: 0;
   left: 0;
-  box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
+  box-shadow: -1px -2px 15px 3px rgba(82, 80, 80, 0.3);
   z-index: 999;
   padding: .625rem 1rem; }
 
@@ -1012,9 +1018,7 @@ h6 {
   -o-background-size: cover;
   -ms-background-size: cover;
   background-size: cover;
-  background-position: top;
-  background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-position: top; }
 
 .intro__inner {
   text-align: center;
@@ -1243,9 +1247,8 @@ label {
 .service-text h5 {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: .5rem; }
-  .service-text h5 a {
-    color: #334252; }
+  margin-bottom: .5rem;
+  color: #334252; }
 .service-text p {
   font-size: 1rem;
   color: #5E6271;
@@ -1666,6 +1669,10 @@ label {
 
 /* Responsive */
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
+@media (hover: none), (hover: on-demand) {
+  #movetop:hover #arrowtop {
+    /* suppress hover effect on devices that don't support hover fully */
+    animation: none; } }
 /* Medium Device = 991px*/
 @media only screen and (max-width: 991px) {
   .o-none {
@@ -1864,7 +1871,7 @@ label {
 /* USmall Device = 669px */
 @media only screen and (max-width: 669px) {
   .tab-content img {
-    max-width: 50% !important; }
+    max-width: 60% !important; }
 
   .features__img {
     max-width: 50%; }

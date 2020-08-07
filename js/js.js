@@ -48,9 +48,9 @@ burgerEl.addEventListener('click', () => {
         // body.style.cssText = `position: fixed; margin-top: ${-topOffset}px;`
 
         //body.hideOverflow;
-        body.style.overflow = 'hidden';
+        body.classList.add('o-hidden');
     } else {
-        body.removeAttribute('style');
+        body.classList.remove('o-hidden');
         collapse.classList.add('collapse-close');
         collapse.classList.remove('o-none');
         // body.style.cssText = `position: static; margin-top: 0;`
@@ -82,10 +82,16 @@ window.addEventListener('resize', fixheader, false);
 // for srollTop
 let moveTop = document.getElementById('movetop')
 moveTop.addEventListener('click', function() {
-    window.scrollTo(0, 0, {
-        behavior: 'smooth'
-    });
+    const scrollToTop = () => {
+        const c = document.documentElement.scrollTop || document.body.scrollTop;
+        if (c > 0) {
+            window.requestAnimationFrame(scrollToTop);
+            window.scrollTo(0, c - c / 9);
+        }
+    };
+    scrollToTop();
 })
+
 let scroltop = function() {
     if (document.body.scrollTop > 44 || document.documentElement.scrollTop > 44) {
         document.getElementById('movetop').style.display = "flex";
@@ -96,7 +102,6 @@ let scroltop = function() {
 window.addEventListener('load', scroltop, false);
 window.addEventListener('scroll', scroltop, false);
 window.addEventListener('resize', scroltop, false);
-
 
 
 

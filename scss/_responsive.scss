@@ -1,5 +1,13 @@
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
+@media (hover:none),
+(hover:on-demand) {
+    #movetop:hover #arrowtop {
+        /* suppress hover effect on devices that don't support hover fully */
+        animation: none;
+    }
+}
+
 // @media only screen and (min-width: 1200px) {}
 
 /* Medium Device = 991px*/
@@ -223,7 +231,7 @@
 
 @media only screen and (max-width: 669px) {
     .tab-content img {
-        max-width: 50% !important;
+        max-width: 60% !important;
     }
     .features__img {
         max-width: 50%;

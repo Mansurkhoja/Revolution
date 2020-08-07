@@ -52,6 +52,6 @@
     box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
     transition: all 0.3s ease 0s;
     &:hover #arrowtop {
-        animation: arrowtop .9s forwards ease; // running
+        animation: arrowtop .9s infinite linear; // running
     }
 }

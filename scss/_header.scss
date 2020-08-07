@@ -1,5 +1,5 @@
 #header {
-    transition: all .1s ease-in-out;
+    @include transition(all .25s cubic-bezier(0.4, 0, 1, 1));
 }
 
 .header {
@@ -12,7 +12,7 @@
     top: 0;
     right: 0;
     left: 0;
-    box-shadow: 5px 3px 15px 3px rgba(82, 80, 80, 0.3);
+    box-shadow: -1px -2px 15px 3px rgba(82, 80, 80, 0.3);
     z-index: 999;
     padding: .625rem 1rem;
 }
