@@ -190,3 +190,34 @@ window.addEventListener('resize', scroltop, false);
 // console.log(screen.height, screen.width);
 // console.log(screen.availWidth, screen.availHeight);
 // console.log(navigator);
+
+
+
+// view
+// (function() {
+//     var elements;
+//     var windowHeight;
+
+//     function init() {
+//         elements = document.querySelectorAll('.ds');
+//         windowHeight = window.innerHeight;
+//     }
+
+//     function checkPosition() {
+//         for (var i = 0; i < elements.length; i++) {
+//             var element = elements[i];
+//             var positionFromTop = elements[i].getBoundingClientRect().top;
+
+//             if (positionFromTop - windowHeight <= 0) {
+//                 element.classList.add('serico');
+//                 element.classList.remove('ds');
+//             }
+//         }
+//     }
+
+//     window.addEventListener('scroll', checkPosition);
+//     window.addEventListener('resize', init);
+
+//     init();
+//     checkPosition();
+// })();

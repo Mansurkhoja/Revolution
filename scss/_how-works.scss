@@ -21,15 +21,18 @@ input {
             opacity: 1;
         }
         & #pay .pay-1 {
+            -webkit-animation: none;
             animation: none;
         }
         & #pay .pay-2 {
+            -webkit-animation: none;
             animation: none;
         }
         & #smile .smile-1 {
             opacity: 1;
         }
         & #rewards {
+            -webkit-animation: none;
             animation: none;
         }
     }
@@ -75,9 +78,11 @@ label {
             opacity: 0;
         }
         & #pay .pay-1 {
+            -webkit-animation: pay 3s 0s linear infinite;
             animation: pay 3s 0s linear infinite;
         }
         & #pay .pay-2 {
+            -webkit-animation: pay 3s 0s linear infinite;
             animation: pay 3s 0s linear infinite;
         }
         & #smile .smile-1 {
@@ -85,6 +90,7 @@ label {
             opacity: 0;
         }
         & #rewards {
+            -webkit-animation: rewards 3s infinite linear;
             animation: rewards 3s infinite linear;
         }
     }

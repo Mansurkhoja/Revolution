@@ -18,6 +18,7 @@
     //     animation: colapse-open .4s linear 0s 1 normal both;
     // }
     .show~.collapse {
+        -webkit-animation: navbar-open 0.4s linear forwards;
         animation: navbar-open 0.4s linear forwards;
         opacity: 1;
     }
@@ -40,6 +41,7 @@
         align-items: center;
     }
     .collapse-close {
+        -webkit-animation: navbar-close 0.4s linear forwards;
         animation: navbar-close 0.4s linear forwards;
     }
     .nav__links {
@@ -336,6 +338,7 @@
 @media (hover: none),
 (hover: on-demand) {
     #movetop:hover #arrowtop {
+        -webkit-animation: none;
         animation: none;
     }
 }

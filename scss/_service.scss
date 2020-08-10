@@ -35,15 +35,19 @@
         transition: 0.2s linear;
     }
     &:hover #clock .time__minute {
+        -webkit-animation: clock-minute 5s linear 0s 1 normal both;
         animation: clock-minute 5s linear 0s 1 normal both;
     }
     &:hover #clock .time__hour {
+        -webkit-animation: clock-hour 5s linear 0s 1 normal both;
         animation: clock-hour 5s linear 0s 1 normal both;
     }
     &:hover #userint .user-linebig {
+        -webkit-animation: userint 5s linear 0s 1 normal both;
         animation: userint 5s linear 0s 1 normal both;
     }
     &:hover #databaseIcon {
+        -webkit-animation: databaseIcon 3s linear 0s 1 normal both;
         animation: databaseIcon 3s linear 0s 1 normal both;
     }
 }

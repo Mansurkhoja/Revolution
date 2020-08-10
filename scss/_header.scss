@@ -42,26 +42,32 @@
 }
 
 .logo__brand:hover .logo {
+    -webkit-animation: logoanimate 2s backwards;
     animation: logoanimate 2s backwards;
 }
 
 .logo__brand:hover .cls-1 {
+    -webkit-animation: cls-1 2s backwards linear;
     animation: cls-1 2s backwards linear;
 }
 
 .logo__brand:hover .cls-2 {
+    -webkit-animation: cls-2 2s backwards linear;
     animation: cls-2 2s backwards linear;
 }
 
 .logo__brand:hover .cls-3 {
+    -webkit-animation: cls-3 2s backwards linear;
     animation: cls-3 2s backwards linear;
 }
 
 .logo__brand:hover .cls-4 {
+    -webkit-animation: cls-4 2s backwards linear;
     animation: cls-4 2s backwards linear;
 }
 
 .logo__brand:hover .cls-5 {
+    -webkit-animation: cls-5 2s backwards linear;
     animation: cls-5 2s backwards linear;
 }
 
